@@ -1,0 +1,15 @@
+import random
+answer = "yes"
+min = 1
+max = 6
+while True:
+    if answer == "yes" or answer == "y":
+        n = int(input("roll the dice: "))
+        y = random.randint(min, max)
+        print y
+        if n == y:
+            print "you guessed correctly!!!!!!"
+        answer = raw_input("Would you like to play again: ")
+    elif answer == "no" or answer =="n":
+        print("Please come back again soon")
+        break
