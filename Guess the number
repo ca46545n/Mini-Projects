@@ -1,0 +1,19 @@
+mport random
+
+answer = "yes"
+
+l = (range(1,10))
+
+while True:
+    if answer == "yes" or answer == "y":
+        n = int(input("Guess the number :"))
+        y = (random.choice(l))
+        print y
+        if n == y:
+            print ("winner winner chicken dinner !!!!!!")
+        else:
+            print("sorry that's not the right number")
+        answer = raw_input("Would you like to Guess again?:")
+    elif answer == "no" or answer =="n":
+        print("See ya next time")
+        break
